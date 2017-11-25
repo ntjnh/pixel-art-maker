@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 
   // Event listener for grid squares
-  $(pixels).click(function(e) {
+  $(pixels).mousedown(function(e) {
     const color = colorPicker.val();
     const clickedSquare = e.target;
     
