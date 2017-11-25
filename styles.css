@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #cf2727;
+    background-color: #0F4566;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -35,15 +35,15 @@ label[for=input_width] {
 
 input[type=number],
 input[type=submit] {
-    background-color: transparent;
     border: 1px solid #fff;
-    color: #fff;
 }
 
 input[type=submit] {
     display: block;
     margin: 1.25em auto 0.625em;
     padding: 0.625em 1.25em;
+    background-color: transparent;
+    color: #fff;
     border-radius: 0.938em;
     border-style: none;
     font-size: .9em;
@@ -55,11 +55,13 @@ input[type=submit] {
 input[type=submit],
 input[type=submit]:visited,
 input[type=submit]:hover {
-    background-color: #FF4A4A;
+    background-color: #61FFE5;
+    color: #000;
 }
 
 input[type=submit]:active {
-    background-color: #820C0C;
+    background-color: #F0DB3C;
+    color: #000;
 }
 
 input[type=submit]:focus {
@@ -73,6 +75,7 @@ input[type=submit]:hover {
 input[type=number] {
     width: 3.125em;
     padding: 0.313em;
+    background-color: #ccc;
 }
 
 table,
