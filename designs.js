@@ -32,9 +32,16 @@ $(document).ready(function() {
   $(pixels).mousedown(function(e) {
     const color = colorPicker.val();
     const clickedSquare = e.target;
+    const clicks = $(clickedSquare).data("clicks");
     
-    // Change background color of clicked square
-    $(clickedSquare).css("background-color", color);
+    if (clicks) {
+      // On 2nd click, revert back to original background color
+      $(clickedSquare).css("background-color", "transparent");
+    } else {
+      // Change background color of clicked square
+      $(clickedSquare).css("background-color", color);
+    }
+    $(clickedSquare).data("clicks", !clicks);
   });
 
 });
